@@ -1,0 +1,24 @@
+
+
+class random {
+    public static void main(String[] args) {
+        double a=Math.random();
+        double b=Math.random();
+        double c=Math.random();
+        double d=Math.random();
+        double e=Math.random();
+
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
+        
+        double max = Math.max(Math.max(Math.max(a,b),c), Math.max(d,e));
+        double min = Math.min(Math.min(Math.min(a,b),c), Math.min(d,e));
+        double ave = ((a+b+c+d+e)/5);
+        System.out.println("max: " + max);
+        System.out.println("average: " + ave);
+        System.out.println("min: " + min);
+    }
+}
